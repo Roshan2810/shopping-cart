@@ -1,0 +1,11 @@
+[2021-01-29 17:47:35.774] [renderer3] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/roshan/Desktop/shopping-cart-practice/User'
+[2021-01-29 17:47:35.919] [renderer3] [error] connect ENOENT /home/roshan/Desktop/shopping-cart-practice/1.52.1-shared.sock: Error: connect ENOENT /home/roshan/Desktop/shopping-cart-practice/1.52.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2021-01-29 17:47:36.034] [renderer3] [error] connect ENOENT /home/roshan/Desktop/shopping-cart-practice/1.52.1-shared.sock: Unknown (UserDataSyncError) syncResource:unknown operationId:unknown: connect ENOENT /home/roshan/Desktop/shopping-cart-practice/1.52.1-shared.sock
+    at Function.e.toUserDataSyncError (file:///snap/code/52/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2968:636)
+    at file:///snap/code/52/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:6291:277
+[2021-01-29 17:47:36.035] [renderer3] [error] connect ENOENT /home/roshan/Desktop/shopping-cart-practice/1.52.1-shared.sock: Error: connect ENOENT /home/roshan/Desktop/shopping-cart-practice/1.52.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2021-01-29 17:47:37.072] [renderer3] [error] Error: connect ENOENT /home/roshan/Desktop/shopping-cart-practice/1.52.1-shared.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (net.js:1134:16)
+[2021-01-29 17:47:37.072] [renderer3] [warning] Settings Sync: Accounts are not initialized
