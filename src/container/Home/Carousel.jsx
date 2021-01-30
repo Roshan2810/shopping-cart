@@ -19,7 +19,7 @@ const processLeftMedia = (cardContentH5, cardContentSubtitle, image, buttonText)
                 <Typography variant="subtitle1" color="textSecondary">
                     {cardContentSubtitle}
                 </Typography>
-                <Button variant="contained" color="secondary" style={{ textTransform: 'none' }}>
+                <Button variant="contained" color="secondary" style={{ textTransform: 'none', marginTop: '5%' }}>
                     {buttonText}
                 </Button>
             </CardContent>
@@ -37,7 +37,7 @@ const processRightMedia = (cardContentH5, cardContentSubtitle, image, buttonText
                 <Typography variant="subtitle1" color="textSecondary">
                     {cardContentSubtitle}
                 </Typography>
-                <Button variant="contained" color="secondary" style={{ textTransform: 'none' }}>
+                <Button variant="contained" color="secondary" style={{ textTransform: 'none', marginTop: '5%' }}>
                     {buttonText}
                 </Button>
             </CardContent>
@@ -63,10 +63,10 @@ const Carousel = ({ cardContentH5, cardContentSubtitle, image, mediaPosition, bu
             </Card >
             {!lastCard &&
                 <div style={{
-                    backgroundImage: "radial-gradient(at 50% 0, #c7c0c0 5%, #c7c0c0 10%, transparent 75%)",
+                    backgroundImage: "radial-gradient(at 48% 0, #c7c0c0 0%, #c7c0c0 0%, transparent 65%)",
                     margin: 'auto',
                     textAlign: 'center',
-                    height: '7px',
+                    height: '8px',
                     width: '100%',
                 }}></div>
             }
