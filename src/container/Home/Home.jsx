@@ -1,9 +1,7 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar'
-import { Toolbar, Typography, Link, Paper } from '@material-ui/core';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import IconButton from '@material-ui/core/IconButton';
+import Header from '../../components/common/Header'
 import Carousel from './Carousel'
+import Footer from '../../components/common/Footer'
 
 const data = [
     {
@@ -43,48 +41,6 @@ const data = [
     }
 ]
 class Home extends React.Component {
-
-    processSabkaBazaarLogo = () => {
-        return (<img style={{ marginLeft: '15%' }}
-            width="10%"
-            src="https://iconape.com/wp-content/files/yy/354003/svg/354003.svg"
-            alt="Sabka Bazaar" />);
-    }
-
-    processMenuOptions = () => {
-        return (
-            <>
-                <div style={{ marginLeft: "7%", marginRight: '3%', marginTop: '2.5%' }}>
-                    <Typography variant="h6" noWrap>
-                        <Link style={{ color: "#52525d" }}>Home</Link>
-                    </Typography>
-                </div>
-
-                <div style={{ marginTop: '2.5%' }}>
-                    <Typography variant="h6" noWrap>
-                        <Link style={{ color: "#52525d" }}>Products</Link>
-                    </Typography>
-                </div>
-
-            </>
-        );
-    }
-
-    processOtherOptions = () => {
-        return (
-            <div style={{ marginLeft: '35%' }}>
-                <Link style={{ marginRight: '10%', color: '#52525d' }}>SignIn</Link>
-                <Link style={{ color: '#52525d' }}>Register</Link>
-                <div style={{ marginTop: '23%' }}>
-                    <IconButton aria-label="show 4 new mails" color="inherit" style={{ backgroundColor: '#e7e7ec', borderRadius: '0%' }}>
-                        <ShoppingCartIcon style={{ fontSize: "40px" }} color="secondary" />
-                        <span style={{ color: 'black', fontSize: '18px' }}>{`${0} items`}</span>
-                    </IconButton>
-                </div>
-            </div>
-        );
-    }
-
     processCards = () => {
         const length = data.length - 1
         return data.map((val, index) => {
@@ -99,28 +55,13 @@ class Home extends React.Component {
         })
     }
 
-    processFooter = () =>
-        <Paper style={{ backgroundColor: '#e7e7ec' }}>
-            <Typography
-                style={{ marginLeft: '16%' }}
-                variant="h6">
-                Copyright (c) 2020-2021 Sabka Bazaar Grocery Supplies Pvt Ltd
-            </Typography>
-        </Paper>
-
 
     render() {
         return (
             <div>
-                <AppBar position="static">
-                    <Toolbar style={{ backgroundColor: 'white' }}>
-                        {this.processSabkaBazaarLogo()}
-                        {this.processMenuOptions()}
-                        {this.processOtherOptions()}
-                    </Toolbar>
-                </AppBar>
+                <Header />
                 {this.processCards()}
-                {this.processFooter()}
+                <Footer />
             </div >
 
         );
