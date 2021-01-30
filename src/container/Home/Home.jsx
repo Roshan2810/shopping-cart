@@ -45,7 +45,7 @@ const data = [
 class Home extends React.Component {
 
     processSabkaBazaarLogo = () => {
-        return (<img style={{ marginLeft:'15%' }}
+        return (<img style={{ marginLeft: '15%' }}
             width="10%"
             src="https://iconape.com/wp-content/files/yy/354003/svg/354003.svg"
             alt="Sabka Bazaar" />);
@@ -86,38 +86,43 @@ class Home extends React.Component {
     }
 
     processCards = () => {
-        return data.map(val => {
+        const length = data.length - 1
+        return data.map((val, index) => {
             return <Carousel
                 key={val.cardContentH5}
                 cardContentH5={val.cardContentH5}
                 cardContentSubtitle={val.cardContentSubtitle}
                 image={val.image}
                 mediaPosition={val.mediaPosition}
-                buttonText={val.buttonText} />
+                buttonText={val.buttonText}
+                lastCard={length === index ? true : false} />
         })
     }
 
+    processFooter = () =>
+        <Paper style={{ backgroundColor: '#e7e7ec' }}>
+            <Typography
+                style={{ marginLeft: '16%' }}
+                variant="h6">
+                Copyright (c) 2020-2021 Sabka Bazaar Grocery Supplies Pvt Ltd
+            </Typography>
+        </Paper>
+
+
     render() {
         return (
-            <>
-                <div>
-                    <AppBar position="static">
-                        <Toolbar style={{ backgroundColor: 'white' }}>
-                            {this.processSabkaBazaarLogo()}
-                            {this.processMenuOptions()}
-                            {this.processOtherOptions()}
-                        </Toolbar>
-                    </AppBar>
-                    <div>{this.processCards()}</div>
-                </div >
-                <Paper style={{ backgroundColor: '#e7e7ec' }}>
-                    <Typography
-                        style={{ marginLeft: '16%' }}
-                        variant="h6">
-                        Copyright (c) 2020-2021 Sabka Bazaar Grocery Supplies Pvt Ltd
-                        </Typography>
-                </Paper>
-            </>
+            <div>
+                <AppBar position="static">
+                    <Toolbar style={{ backgroundColor: 'white' }}>
+                        {this.processSabkaBazaarLogo()}
+                        {this.processMenuOptions()}
+                        {this.processOtherOptions()}
+                    </Toolbar>
+                </AppBar>
+                {this.processCards()}
+                {this.processFooter()}
+            </div >
+
         );
     }
 }

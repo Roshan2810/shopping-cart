@@ -1,0 +1,3 @@
+[2021-01-30 12:54:44.513] [sharedprocess] [info] main {"machineId":"65d38fd7fe9659765357235300fd7986eb3cb8f0f4be42643cbc3fa35a973ad3","windowId":2}
+[2021-01-30 12:54:44.586] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/roshan/Desktop/shopping-cart-practice/User/snippets'
+[2021-01-30 12:55:24.529] [sharedprocess] [info] Starting to clean up unused language packs.
