@@ -63,7 +63,7 @@ const Carousel = ({ cardContentH5, cardContentSubtitle, image, mediaPosition, bu
             </Card >
             {!lastCard &&
                 <div style={{
-                    backgroundImage: "radial-gradient(at 48% 0, #c7c0c0 0%, #c7c0c0 0%, transparent 65%)",
+                    backgroundImage: "radial-gradient(at 48% 0, #9e9898 0%, #9e9898 0%, transparent 70%)",
                     margin: 'auto',
                     textAlign: 'center',
                     height: '8px',
