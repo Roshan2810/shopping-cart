@@ -10,3 +10,9 @@
 [2021-01-31 16:35:51.574] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?),(?,?)). Details: Keys: javascript.1.editedCount, javascript.1.editedDate Length: 16
 [2021-01-31 16:38:39.513] [main] [info] update#setState checking for updates
 [2021-01-31 16:38:39.514] [main] [info] update#setState idle
+[2021-01-31 17:38:39.615] [main] [info] update#setState checking for updates
+[2021-01-31 17:38:39.620] [main] [info] update#setState idle
+[2021-01-31 18:38:39.638] [main] [info] update#setState checking for updates
+[2021-01-31 18:38:39.641] [main] [info] update#setState idle
+[2021-01-31 19:38:39.739] [main] [info] update#setState checking for updates
+[2021-01-31 19:38:39.742] [main] [info] update#setState idle
