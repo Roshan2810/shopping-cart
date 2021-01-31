@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../common/Header'
 import Footer from '../common/Footer'
-import { Typography, CardContent, Container, TextField, Button, Grid } from '@material-ui/core'
+import { Typography, Container, TextField, Button, Grid } from '@material-ui/core'
 
 const MuiCard = () => {
     return (

@@ -1,14 +1,11 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar'
-import { Toolbar, Typography, Link, Modal, Icon, Grid, Button } from '@material-ui/core';
+import { Toolbar, Typography, Link, Modal, Grid, Button } from '@material-ui/core';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import IconButton from '@material-ui/core/IconButton';
 import { withRouter } from 'react-router-dom';
 import CloseIcon from '@material-ui/icons/Close';
-
-function rand() {
-    return Math.round(Math.random() * 20) - 10;
-}
+import { connect } from 'react-redux'
 
 class Header extends React.Component {
     state = {
@@ -48,7 +45,7 @@ class Header extends React.Component {
                 <div style={{ marginTop: '23%' }}>
                     <IconButton onClick={this.setModalState} aria-label="show 4 new mails" color="inherit" style={{ backgroundColor: '#e7e7ec', borderRadius: '0%' }}>
                         <ShoppingCartIcon style={{ fontSize: "40px" }} color="secondary" />
-                        <span style={{ color: 'black', fontSize: '18px' }}>{`${0} items`}</span>
+                        <span style={{ color: 'black', fontSize: '18px' }}>{`${this.props.productdetail.count} items`}</span>
                     </IconButton>
                 </div>
             </div>
@@ -106,20 +103,23 @@ class Header extends React.Component {
                         </Grid>
                     </Grid>
                 </div>
-                <div style={{ textAlign: 'center',height:'55%'}}>
+                <div style={{ textAlign: 'center', height: '55%' }}>
                     <Typography variant="h6"><strong>No items in your cart</strong></Typography>
                     <div>
                         Your favourite items are just a click away
                     </div>
                 </div>
                 <div style={{ padding: '1%', height: '10%' }}>
-                    <Button fullWidth style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">Start Shopping</Button>
+                    <Button fullWidth
+                        onClick={()=>this.props.history.push("/")}
+                        style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">Start Shopping</Button>
                 </div>
             </>
         );
     }
 
     render() {
+        console.log(this.props.productdetail)
         return (
             <AppBar position="static">
                 <Toolbar style={{ backgroundColor: 'white' }}>
@@ -134,4 +134,9 @@ class Header extends React.Component {
     }
 }
 
-export default withRouter(Header);
+const mapStateToProps = (state) => {
+    return {
+        productdetail: state.productdetail
+    }
+}
+export default withRouter(connect(mapStateToProps)(Header));
