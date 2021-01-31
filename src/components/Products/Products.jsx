@@ -20,7 +20,7 @@ const processMenuList = () => {
     }
     return <Grid item xs={12} style={{
         width: '100%',
-        height: window.innerHeight + window.outerHeight,
+        height: '100%',
         backgroundColor: '#e7e7ec',
         top: '0'
     }}>
@@ -75,8 +75,9 @@ const processProductCard = (value) => {
                 title={value.title}
             />
             <img width="100%" src={value.image} alt={value.description} />
-            <CardContent style={{ backgroundColor: '#e7e7ec' }}>
-                <Typography variant="body2" color="textSecondary" component="p">
+            <CardContent style={{ backgroundColor: '#e7e7ec'}}>
+                <Typography
+                    variant="body2" color="textSecondary" component="p">
                     {value.description}
                 </Typography>
             </CardContent>
