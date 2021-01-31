@@ -74,7 +74,7 @@ class Products extends React.Component {
                     <Typography variant="subtitle2">
                         {`MRP Rs.${value.price}`}
                     </Typography>
-                    <Button style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">
+                    <Button onClick={() => this.props.dispatch({ type: 'BUY_NOW', payload: value })} style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">
                         Buy Now
                 </Button>
                 </CardActions>
