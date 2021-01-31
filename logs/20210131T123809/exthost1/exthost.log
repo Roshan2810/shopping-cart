@@ -1,0 +1,950 @@
+[2021-01-31 12:38:12.602] [exthost] [info] extension host started
+[2021-01-31 12:38:12.724] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-01-31 12:38:12.725] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-01-31 12:38:12.741] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:javascriptreact"}
+[2021-01-31 12:38:12.741] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2021-01-31 12:38:12.763] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-01-31 12:38:12.763] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-01-31 12:38:12.766] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2021-01-31 12:38:12.767] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-01-31 12:38:12.797] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-01-31 12:38:12.798] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/git/dist/main
+[2021-01-31 12:38:12.839] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2021-01-31 12:38:12.839] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-01-31 12:38:12.842] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2021-01-31 12:38:12.842] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2021-01-31 12:38:12.844] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"extensionId":{"value":"vscode.npm","_lower":"vscode.npm"},"activationEvent":"workspaceContains:package.json"}
+[2021-01-31 12:38:12.844] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/npm/dist/npmMain
+[2021-01-31 12:38:13.172] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-01-31 12:38:13.172] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/github/dist/extension.js
+[2021-01-31 12:38:13.294] [exthost] [info] eager extensions activated
+[2021-01-31 12:38:13.303] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-01-31 12:38:13.303] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-01-31 12:38:13.584] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-01-31 12:38:13.584] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2021-01-31 12:48:07.520] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:typescript"}
+[2021-01-31 12:48:07.520] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/extension-editing/dist/extensionEditingMain
+[2021-01-31 12:49:36.176] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 12:49:36.179] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 12:57:03.878] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 12:57:03.879] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 13:18:01.248] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 13:18:01.248] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 13:22:25.509] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 13:22:25.509] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 13:26:52.053] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 13:26:52.053] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 13:29:15.781] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 13:29:15.782] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 13:29:52.118] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 13:29:52.118] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 13:34:36.594] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 13:34:36.594] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 13:55:39.733] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 13:55:39.733] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 13:56:43.497] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 13:56:43.497] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 14:09:25.612] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:09:25.613] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 14:09:27.396] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:09:27.396] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 14:09:29.092] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:09:29.092] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 14:19:25.154] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:19:25.154] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. Token and statement should start at the same point. {"statementKind":"ReturnStatement","tokenKind":"JsxText","errorCode":7027,"start":4699,"length":91}
+Error: Debug Failure. Token and statement should start at the same point. {"statementKind":"ReturnStatement","tokenKind":"JsxText","errorCode":7027,"start":4699,"length":91}
+    at doChange (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:138345:26)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:138328:96
+    at Function.ChangeTracker.with (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:132349:17)
+    at Object.getCodeActions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:138328:64)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:133528:77
+    at Object.flatMap (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:513:25)
+    at Object.getFixes (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:133528:23)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:147037:35
+    at Object.flatMap (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:513:25)
+    at Proxy.getCodeFixesAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:147035:23)
+    at IOSession.Session.getCodeFixes (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157976:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156653:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 14:27:04.491] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:27:04.491] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 14:28:10.822] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:28:10.822] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 14:29:36.858] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:29:36.858] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Cannot read property 'length' of undefined
+TypeError: Cannot read property 'length' of undefined
+    at checkNumericLiteralValueSize (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:79913:77)
+    at checkGrammarNumericLiteral (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:79906:13)
+    at checkExpressionWorker (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:71736:21)
+    at checkExpression (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:71674:38)
+    at getQuickTypeOfExpression (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:71640:24)
+    at getTypeOfExpression (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:71603:29)
+    at getRegularTypeOfExpression (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:77636:48)
+    at getTypeOfNode (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:77544:24)
+    at Object.getTypeAtLocation (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:43559:31)
+    at collectReadsAndWrites (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:143208:34)
+    at getPossibleExtractionsWorker (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:142539:38)
+    at getPossibleExtractions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:142494:26)
+    at Object.getAvailableActions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:141943:35)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:133580:128
+    at getIterator (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:567:23)
+    at Object.next (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:562:35)
+    at Object.arrayFrom (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:1307:88)
+    at Object.getApplicableRefactors (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:133579:23)
+    at Proxy.getApplicableRefactors (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:147478:32)
+    at IOSession.Session.getApplicableRefactors (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157926:53)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156671:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 14:30:22.523] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:30:22.523] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 14:31:18.064] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:31:18.064] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 14:32:26.170] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:32:26.171] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 14:35:15.709] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:35:15.710] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 14:36:46.663] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:36:46.663] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 14:42:04.222] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 14:42:04.222] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 15:38:48.433] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 15:38:48.433] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. Token and statement should start at the same point. {"statementKind":"ReturnStatement","tokenKind":"ColonToken","errorCode":7027,"start":436,"length":4}
+Error: Debug Failure. Token and statement should start at the same point. {"statementKind":"ReturnStatement","tokenKind":"ColonToken","errorCode":7027,"start":436,"length":4}
+    at doChange (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:138345:26)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:138328:96
+    at Function.ChangeTracker.with (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:132349:17)
+    at Object.getCodeActions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:138328:64)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:133528:77
+    at Object.flatMap (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:513:25)
+    at Object.getFixes (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:133528:23)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:147037:35
+    at Object.flatMap (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:513:25)
+    at Proxy.getCodeFixesAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:147035:23)
+    at IOSession.Session.getCodeFixes (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157976:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156653:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 15:42:17.117] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 15:42:17.117] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 15:43:38.476] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 15:43:38.476] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. Token and statement should start at the same point. {"statementKind":"ExpressionStatement","tokenKind":"Identifier","errorCode":7027,"start":2493,"length":19}
+Error: Debug Failure. Token and statement should start at the same point. {"statementKind":"ExpressionStatement","tokenKind":"Identifier","errorCode":7027,"start":2493,"length":19}
+    at doChange (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:138345:26)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:138328:96
+    at Function.ChangeTracker.with (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:132349:17)
+    at Object.getCodeActions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:138328:64)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:133528:77
+    at Object.flatMap (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:513:25)
+    at Object.getFixes (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:133528:23)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:147037:35
+    at Object.flatMap (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:513:25)
+    at Proxy.getCodeFixesAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:147035:23)
+    at IOSession.Session.getCodeFixes (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157976:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156653:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 15:43:48.062] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 15:43:48.062] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 15:46:03.440] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 15:46:03.440] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 15:55:53.374] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 15:55:53.375] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 16:15:29.917] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:15:29.918] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 16:17:11.650] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:17:11.650] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 16:18:25.870] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"extensionId":{"value":"vscode.css-language-features","_lower":"vscode.css-language-features"},"activationEvent":"onLanguage:css"}
+[2021-01-31 16:18:25.871] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/css-language-features/client/dist/node/cssClientMain
+[2021-01-31 16:22:31.192] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2021-01-31 16:22:31.192] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/html-language-features/client/dist/node/htmlClientMain
+[2021-01-31 16:35:48.301] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:35:48.301] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 16:39:38.656] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:39:38.656] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 16:39:56.473] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:39:56.474] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 16:52:43.433] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:52:43.433] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 16:58:46.648] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:58:46.648] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 16:58:57.323] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:58:57.323] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 16:59:16.430] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:59:16.430] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 16:59:56.747] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:59:56.747] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 16:59:58.674] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 16:59:58.674] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 17:03:34.571] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 17:03:34.571] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 17:04:46.925] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 17:04:46.925] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 17:18:11.199] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 17:18:11.199] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 17:21:27.480] [exthost] [info] ExtensionService#_doActivateExtension vscode.image-preview {"startup":false,"extensionId":{"value":"vscode.image-preview","_lower":"vscode.image-preview"},"activationEvent":"onCustomEditor:imagePreview.previewEditor"}
+[2021-01-31 17:21:27.480] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/image-preview/dist/extension
+[2021-01-31 17:23:09.424] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 17:23:09.424] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+[2021-01-31 17:25:34.153] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 17:25:34.153] [exthost] [error] Error: DisposableStore is missing...
+	at H._convertCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:765:55)
+	at H.resolveCompletionItem (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:764:813)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[2021-01-31 17:34:11.280] [exthost] [error] [vscode.typescript-language-features] provider FAILED
+[2021-01-31 17:34:11.280] [exthost] [error] Error: <semantic> TypeScript Server Error (4.1.2)
+Debug Failure. False expression.
+Error: Debug Failure. False expression.
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128621:34
+    at Object.forEach (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:188:30)
+    at getSymbolKindOfConstructorPropertyMethodAccessorFunctionOrVar (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128615:48)
+    at Object.getSymbolKind (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:128545:26)
+    at createCompletionEntry (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118152:40)
+    at getCompletionEntriesFromSymbols (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118199:29)
+    at completionInfoFromData (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118023:35)
+    at Object.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:117981:28)
+    at Proxy.getCompletionsAtPosition (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:146718:35)
+    at IOSession.Session.getCompletions (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:157642:64)
+    at Session.handlers.ts.Map.ts.getEntries._a.<computed> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:156526:61)
+    at /snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:88
+    at IOSession.Session.executeWithRequestId (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158267:28)
+    at IOSession.Session.executeCommand (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158276:33)
+    at IOSession.Session.onMessage (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:158300:35)
+    at Interface.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:160510:27)
+    at Interface.emit (events.js:223:5)
+    at Interface._onLine (readline.js:315:10)
+    at Interface._normalWrite (readline.js:460:12)
+    at Socket.ondata (readline.js:172:10)
+    at Socket.emit (events.js:223:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)
+	at Function.create (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:76778)
+	at dispatchResponse (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:70653)
+	at dispatchMessage (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69512)
+	at /snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:1:69022
+	at l.fire (/snap/code/52/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:46:801)
+	at g.onLengthData (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:60018)
+	at Socket.<anonymous> (/snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension.js:45:59666)
+	at Socket.emit (events.js:223:5)
+	at addChunk (_stream_readable.js:309:12)
+	at readableAddChunk (_stream_readable.js:290:11)
+	at Socket.Readable.push (_stream_readable.js:224:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:181:23)

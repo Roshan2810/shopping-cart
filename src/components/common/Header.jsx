@@ -21,13 +21,13 @@ class Header extends React.Component {
             <>
                 <div style={{ marginLeft: "7%", marginRight: '3%', marginTop: '2.5%' }}>
                     <Typography variant="h6" noWrap>
-                        <Link onClick={()=>this.props.history.push("/")} style={{ color: "#52525d" }}>Home</Link>
+                        <Link onClick={() => this.props.history.push("/")} style={{ color: "#52525d" }}>Home</Link>
                     </Typography>
                 </div>
 
                 <div style={{ marginTop: '2.5%' }}>
                     <Typography variant="h6" noWrap>
-                        <Link style={{ color: "#52525d" }}>Products</Link>
+                        <Link onClick={() => this.props.history.push("/products")} style={{ color: "#52525d" }}>Products</Link>
                     </Typography>
                 </div>
 
@@ -39,7 +39,7 @@ class Header extends React.Component {
         return (
             <div style={{ marginLeft: '35%' }}>
                 <Link onClick={() => this.props.history.push("/signin")} style={{ marginRight: '10%', color: '#52525d' }}>SignIn</Link>
-                <Link style={{ color: '#52525d' }}>Register</Link>
+                <Link onClick={() => this.props.history.push("/register")} style={{ color: '#52525d' }}>Register</Link>
                 <div style={{ marginTop: '23%' }}>
                     <IconButton aria-label="show 4 new mails" color="inherit" style={{ backgroundColor: '#e7e7ec', borderRadius: '0%' }}>
                         <ShoppingCartIcon style={{ fontSize: "40px" }} color="secondary" />
