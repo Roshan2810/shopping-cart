@@ -2,6 +2,8 @@ import { Container, Grid, Card, CardContent, CardActions, CardMedia, Typography,
 import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
+import Box from '@material-ui/core/Box';
+
 
 
 const data = require('./products.json');
@@ -18,11 +20,11 @@ const processMenuList = () => {
         marginLeft: '2%'
 
     }
-    return <Grid item xs={12} style={{
+    return <div style={{
         width: '100%',
         height: window.innerHeight + window.outerHeight,
-        backgroundColor: '#e7e7ec',
-        top: '0'
+        backgroundColor: '#e7e7ec'
+        
     }}>
         <ul style={{ listStyle: 'none', padding: "2vh 0vh", margin: '0%', overflow: 'hidden', color: 'gray' }}>
             <li style={listStyle}>
@@ -49,7 +51,7 @@ const processMenuList = () => {
             </li>
             <hr style={hrStyle}></hr>
         </ul>
-    </Grid>
+    </div>
 }
 const processItemGrid = () => {
     return (
@@ -70,12 +72,14 @@ const processItemGrid = () => {
 
 const processProductCard = (value) => {
     return (
-        <Card key={value.id} style={{ borderBottom: "dashed #e7e7ec", boxShadow: 'none', borderRadius: '0%' }}>
+
+      <Card key={value.id} style={{ borderBottom: "dashed #e7e7ec", boxShadow: 'none', borderRadius: '0%', height: "100%",display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
             <CardHeader
                 title={value.title}
             />
             <img width="100%" src={value.image} alt={value.description} />
-            <CardContent style={{ backgroundColor: '#e7e7ec' }}>
+            
+            <CardContent style={{ height: "100%", backgroundColor: '#e7e7ec' }}>
                 <Typography variant="body2" color="textSecondary" component="p">
                     {value.description}
                 </Typography>
@@ -89,19 +93,21 @@ const processProductCard = (value) => {
                 </Button>
             </CardActions>
         </Card>
+      
     );
 }
 
 const processProductLists = () => {
     return (
         <Grid container spacing={1}>
-            <Grid container item xs={12} spacing={3}>
+            <Grid container item xs={12} spacing={3} >
                 {data.map(value => <Grid item xs={3} key={value.id}>
                     {processProductCard(value)}
                 </Grid>
                 )}
             </Grid>
         </Grid>
+        
     );
 }
 const Products = () => {
