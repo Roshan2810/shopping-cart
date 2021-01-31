@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './container/Home/Home';
 import Signin from './components/SignIn/Signin';
-import Products from './components/Products/Products';
+import Products from './components/Products/Products.jsx';
 import Register from './components/Register/Register';
 
 class Routing extends React.Component {

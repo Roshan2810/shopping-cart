@@ -74,8 +74,8 @@ const processProductCard = (value) => {
             <CardHeader
                 title={value.title}
             />
-            <img width="90%" src={value.image} alt={value.description} />
-            <CardContent>
+            <img width="100%" src={value.image} alt={value.description} />
+            <CardContent style={{ backgroundColor: '#e7e7ec' }}>
                 <Typography variant="body2" color="textSecondary" component="p">
                     {value.description}
                 </Typography>
@@ -84,7 +84,7 @@ const processProductCard = (value) => {
                 <Typography variant="subtitle2">
                     {`MRP Rs.${value.price}`}
                 </Typography>
-                <Button style={{ textTransform: 'none', borderRadius:'0%' }} variant="contained" color="secondary">
+                <Button style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">
                     Buy Now
                 </Button>
             </CardActions>

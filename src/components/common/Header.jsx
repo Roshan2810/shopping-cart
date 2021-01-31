@@ -1,14 +1,18 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar'
-import { Toolbar, Typography, Link } from '@material-ui/core';
+import { Toolbar, Typography, Link, Modal } from '@material-ui/core';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import IconButton from '@material-ui/core/IconButton';
 import { withRouter } from 'react-router-dom'
 
-
+function rand() {
+    return Math.round(Math.random() * 20) - 10;
+}
 
 class Header extends React.Component {
-
+    state = {
+        open: false
+    }
     processSabkaBazaarLogo = () => {
         return (<img style={{ marginLeft: '15%' }}
             width="10%"
@@ -41,12 +45,45 @@ class Header extends React.Component {
                 <Link onClick={() => this.props.history.push("/signin")} style={{ marginRight: '10%', color: '#52525d' }}>SignIn</Link>
                 <Link onClick={() => this.props.history.push("/register")} style={{ color: '#52525d' }}>Register</Link>
                 <div style={{ marginTop: '23%' }}>
-                    <IconButton aria-label="show 4 new mails" color="inherit" style={{ backgroundColor: '#e7e7ec', borderRadius: '0%' }}>
+                    <IconButton onClick={this.setModalState} aria-label="show 4 new mails" color="inherit" style={{ backgroundColor: '#e7e7ec', borderRadius: '0%' }}>
                         <ShoppingCartIcon style={{ fontSize: "40px" }} color="secondary" />
                         <span style={{ color: 'black', fontSize: '18px' }}>{`${0} items`}</span>
                     </IconButton>
                 </div>
             </div>
+        );
+    }
+
+    handleClose = () => {
+        this.setState({ open: false })
+    }
+
+    setModalState = () => {
+        this.setState({ open: true })
+    }
+
+
+    processModal = () => {
+        return (<Modal
+            open={this.state.open}
+            onClose={this.handleClose}
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+        >
+            {
+                <div style={
+                    {
+                        width: '30%',
+                        height: '70%',
+                        backgroundColor: 'white',
+                        outline:0
+                    }
+                }>
+                    Hello
+                </div>
+            }
+        </Modal>
+
         );
     }
 
@@ -57,6 +94,7 @@ class Header extends React.Component {
                     {this.processSabkaBazaarLogo()}
                     {this.processMenuOptions()}
                     {this.processOtherOptions()}
+                    {this.processModal()}
                 </Toolbar>
             </AppBar>
 
