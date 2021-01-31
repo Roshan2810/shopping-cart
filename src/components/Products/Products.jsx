@@ -22,9 +22,15 @@ const processMenuList = () => {
     }
     return <div style={{
         width: '100%',
+<<<<<<< HEAD
         height: window.innerHeight + window.outerHeight,
         backgroundColor: '#e7e7ec'
         
+=======
+        height: '100%',
+        backgroundColor: '#e7e7ec',
+        top: '0'
+>>>>>>> b6259e43ce2f52bd4f1b288ff591884456f36a0e
     }}>
         <ul style={{ listStyle: 'none', padding: "2vh 0vh", margin: '0%', overflow: 'hidden', color: 'gray' }}>
             <li style={listStyle}>
@@ -78,9 +84,15 @@ const processProductCard = (value) => {
                 title={value.title}
             />
             <img width="100%" src={value.image} alt={value.description} />
+<<<<<<< HEAD
             
             <CardContent style={{ height: "100%", backgroundColor: '#e7e7ec' }}>
                 <Typography variant="body2" color="textSecondary" component="p">
+=======
+            <CardContent style={{ backgroundColor: '#e7e7ec'}}>
+                <Typography
+                    variant="body2" color="textSecondary" component="p">
+>>>>>>> b6259e43ce2f52bd4f1b288ff591884456f36a0e
                     {value.description}
                 </Typography>
             </CardContent>

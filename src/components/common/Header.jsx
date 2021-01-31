@@ -1,9 +1,10 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar'
-import { Toolbar, Typography, Link, Modal } from '@material-ui/core';
+import { Toolbar, Typography, Link, Modal, Icon, Grid, Button } from '@material-ui/core';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import IconButton from '@material-ui/core/IconButton';
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
+import CloseIcon from '@material-ui/icons/Close';
 
 function rand() {
     return Math.round(Math.random() * 20) - 10;
@@ -74,16 +75,47 @@ class Header extends React.Component {
                 <div style={
                     {
                         width: '30%',
-                        height: '70%',
+                        height: '80%',
                         backgroundColor: 'white',
-                        outline:0
+                        outline: 0,
+                        margin: 'auto',
+                        marginTop: '6%',
+                        marginLeft: '52.8%'
                     }
                 }>
-                    Hello
+                    {this.processModalView()}
                 </div>
             }
         </Modal>
 
+        );
+    }
+
+    processModalView = () => {
+        return (
+            <>
+                <div style={{ height: '39%' }}>
+                    <Grid container style={{ backgroundColor: 'black', color: 'white' }}>
+                        <Grid item xs={10}>
+                            <Typography style={{ padding: '2%' }} variant="h6"><strong>My Cart</strong></Typography>
+                        </Grid>
+                        <Grid item xs={2}>
+                            <IconButton onClick={this.handleClose} style={{ color: 'white', float: 'right' }}>
+                                <CloseIcon fontSize="inherit" style={{ color: 'white' }} />
+                            </IconButton>
+                        </Grid>
+                    </Grid>
+                </div>
+                <div style={{ textAlign: 'center',height:'55%'}}>
+                    <Typography variant="h6"><strong>No items in your cart</strong></Typography>
+                    <div>
+                        Your favourite items are just a click away
+                    </div>
+                </div>
+                <div style={{ padding: '1%', height: '10%' }}>
+                    <Button fullWidth style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">Start Shopping</Button>
+                </div>
+            </>
         );
     }
 
