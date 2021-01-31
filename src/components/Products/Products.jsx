@@ -4,8 +4,8 @@ import Header from '../common/Header';
 import Footer from '../common/Footer';
 import { connect } from 'react-redux';
 const data = require('./products.json');
-class Products extends React.Component {
 
+class Products extends React.Component {
     processMenuList = () => {
         const listStyle = {
             marginLeft: '5%'
@@ -18,7 +18,7 @@ class Products extends React.Component {
             marginLeft: '2%'
 
         }
-        return <Grid item xs={12} style={{
+        return <div style={{
             width: '100%',
             height: '100%',
             backgroundColor: '#e7e7ec',
@@ -27,29 +27,18 @@ class Products extends React.Component {
             <ul style={{ listStyle: 'none', padding: "2vh 0vh", margin: '0%', overflow: 'hidden', color: 'gray' }}>
                 <li style={listStyle}>
                     Fruits & Vegetables
-                </li>
+            </li>
                 <hr style={hrStyle}></hr>
                 <li style={listStyle}>
                     Bakery Cakes and Dairy
-                </li>
+            </li>
                 <hr style={hrStyle}></hr>
-
-                <li style={listStyle}>
-                    Beverages
-                </li>
-                <hr style={hrStyle}></hr>
-
-                <li style={listStyle}>
-                    Beauty and Hygiene
-                </li>
-                <hr style={hrStyle}></hr>
-
                 <li style={listStyle}>
                     Baby Care
                 </li>
                 <hr style={hrStyle}></hr>
             </ul>
-        </Grid>
+        </div>
     }
     processItemGrid = () => {
         return (
@@ -70,7 +59,7 @@ class Products extends React.Component {
 
     processProductCard = (value) => {
         return (
-            <Card key={value.id} style={{ borderBottom: "dashed #e7e7ec", boxShadow: 'none', borderRadius: '0%' }}>
+            <Card key={value.id} style={{ borderBottom: "dashed #e7e7ec", boxShadow: 'none', borderRadius: '0%', height: "100%", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
                 <CardHeader
                     title={value.title}
                 />
@@ -79,30 +68,32 @@ class Products extends React.Component {
                     <Typography
                         variant="body2" color="textSecondary" component="p">
                         {value.description}
-                    </Typography>
-                </CardContent>
+                    </Typography >
+                </CardContent >
                 <CardActions>
                     <Typography variant="subtitle2">
                         {`MRP Rs.${value.price}`}
                     </Typography>
-                    <Button onClick={() => this.props.dispatch({ type: 'BUY_NOW', payload: value })} style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">
+                    <Button style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">
                         Buy Now
-                    </Button>
+                </Button>
                 </CardActions>
-            </Card>
+            </Card >
+
         );
     }
 
     processProductLists = () => {
         return (
             <Grid container spacing={1}>
-                <Grid container item xs={12} spacing={3}>
+                <Grid container item xs={12} spacing={3} >
                     {data.map(value => <Grid item xs={3} key={value.id}>
                         {this.processProductCard(value)}
                     </Grid>
                     )}
                 </Grid>
             </Grid>
+
         );
     }
     render() {
@@ -121,8 +112,6 @@ class Products extends React.Component {
         )
     }
 }
-
-
 const mapDispatchToProps = dispatch => {
     return {
         dispatch

@@ -15,9 +15,6 @@ const buynow = (state = initialState, action) => {
                     val.count ? val.count = val.count + 1 : val.count = 1
                 }
             })
-
-
-
             return {
                 ...state,
                 count: state.count + 1,
