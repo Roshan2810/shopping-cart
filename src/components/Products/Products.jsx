@@ -1,9 +1,10 @@
-import { Container, Grid, Card, CardContent, CardActions, Typography, Button, CardHeader,  CardMedia } from '@material-ui/core';
+import { Container, Grid, Card, CardContent, CardActions, Typography, Button, CardHeader, CardMedia } from '@material-ui/core';
 import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import { connect } from 'react-redux';
 import buynow from '../../flux/actions/buynow'
+
 const data = require('../../server/products/index.get.json');
 
 class Products extends React.Component {
@@ -28,11 +29,19 @@ class Products extends React.Component {
             <ul style={{ listStyle: 'none', padding: "2vh 0vh", margin: '0%', overflow: 'hidden', color: 'gray' }}>
                 <li style={listStyle}>
                     Fruits & Vegetables
-            </li>
+                </li>
                 <hr style={hrStyle}></hr>
                 <li style={listStyle}>
                     Bakery Cakes and Dairy
             </li>
+                <hr style={hrStyle}></hr>
+                <li style={listStyle}>
+                    Beverages
+                </li>
+                <hr style={hrStyle}></hr>
+                <li style={listStyle}>
+                    Beauty and Hygiene
+                </li>
                 <hr style={hrStyle}></hr>
                 <li style={listStyle}>
                     Baby Care
@@ -48,8 +57,8 @@ class Products extends React.Component {
                     <Grid item xs={3} style={{ height: '100%' }}>
                         {this.processMenuList()}
                     </Grid>
-                    <Grid item xs={9}>
-                        <div style={{ marginTop: '1%' }}>
+                    <Grid style={{ height: "100%" }} item xs={9}>
+                        <div style={{ marginTop: '1%', height: '100%' }}>
                             {this.processProductLists()}
                         </div>
                     </Grid>
@@ -60,22 +69,30 @@ class Products extends React.Component {
 
     processProductCard = (value) => {
         return (
-            <Card key={value.id} style={{ borderBottom: "dashed #e7e7ec", boxShadow: 'none', borderRadius: '0%', height: "100%", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
-                <CardHeader
+            <Card key={value.id} style={{ height: '100%', boxShadow: 'none', borderBottom: 'dashed #e7e7ec', overflow: 'hidden' }}>
+                <div style={{
+                    padding: '2%',
+                    fontWeight: 'bold',
+                    fontSize: '1.2rem',
+                    height: '10vh',
+                }}>
+                    {value.name}
+                </div>
+                <CardMedia
+                    style={{ backgroundSize: 'contain', height: '20vh', padding: '1.5vh' }}
+                    image={value.imageURL}
                     title={value.name}
                 />
-                <CardMedia
-                 image={value.imageURL}
-                 title={value.name}
-                 />
-                {/* <img width="100%" src={value.imageURL} alt={value.description} /> */}
-                <CardContent style={{ backgroundColor: '#e7e7ec',height:'100%' }}>
-                    <Typography
-                        variant="body2" color="textSecondary" component="p">
-                        {value.description}
-                    </Typography >
-                </CardContent >
-                <CardActions>
+                <div style={{
+                    backgroundColor: '#e7e7ec',
+                    fontSize: '.9rem',
+                    overflow: 'hidden',
+                    height: '10vh',
+                    lineHeight: '1.7'
+                }}>
+                    {value.description}
+                </div >
+                <CardActions style={{ boxSizing: "border-box" }}>
                     <Typography variant="subtitle2">
                         {`MRP Rs.${value.price}`}
                     </Typography>

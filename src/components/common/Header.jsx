@@ -12,9 +12,9 @@ class Header extends React.Component {
         open: false
     }
     processSabkaBazaarLogo = () => {
-        return (<img style={{ marginLeft: '15%' }}
-            width="10%"
-            src="https://iconape.com/wp-content/files/yy/354003/svg/354003.svg"
+        return (<img style={{ marginLeft: '15%', backgroundSize: 'contain' }}
+            width="200vw"
+            src="/static/images/logo_2x.png"
             alt="Sabka Bazaar" />);
     }
 
@@ -44,7 +44,8 @@ class Header extends React.Component {
                 <Link onClick={() => this.props.history.push("/register")} style={{ color: '#52525d' }}>Register</Link>
                 <div style={{ marginTop: '23%' }}>
                     <IconButton onClick={this.setModalState} aria-label="show 4 new mails" color="inherit" style={{ backgroundColor: '#e7e7ec', borderRadius: '0%' }}>
-                        <ShoppingCartIcon style={{ fontSize: "40px" }} color="secondary" />
+                        {/* <ShoppingCartIcon style={{ fontSize: "40px" }} color="secondary" /> */}
+                        <img src="/static/images/cart.svg" alt="cart" style={{ width: '2vw' }} />
                         <span style={{ color: 'black', fontSize: '18px' }}>{`${this.props.productdetail.count} items`}</span>
                     </IconButton>
                 </div>
@@ -97,12 +98,11 @@ class Header extends React.Component {
     processCartView = () => {
         console.log(this.props.productdetail)
         return (
-           
-               <>
+            <>
                 <div style={{ height: '39%' }}>
                     <Grid container style={{ backgroundColor: 'black', color: 'white' }}>
                         <Grid item xs={10}>
-                            <Typography style={{ padding: '2%' }} variant="h6"><strong>My Cart ({this.props.productdetail.count} items)</strong></Typography>
+                            <Typography style={{ padding: '2%' }} variant="h6"><strong>{`My Cart(${this.props.productdetail.count} items)`}</strong></Typography>
                         </Grid>
                         <Grid item xs={2}>
                             <IconButton onClick={this.handleClose} style={{ color: 'white', float: 'right' }}>
@@ -113,18 +113,17 @@ class Header extends React.Component {
                 </div>
                 <div style={{ textAlign: 'center', height: '36%' }}>
                     <p>
-                        {this.props.productdetail.count}
-                        {this.props.productdetail.details}
+                        {/* {this.props.productdetail.details} */}
                     </p>
                 </div>
-                <div style={{ padding: '1%'}}>
-                    <p style={{ textAlign: 'center'}}>Promo code can be applied on payment page</p>
+                <div style={{ padding: '1%' }}>
+                    <p style={{ textAlign: 'center' }}>Promo code can be applied on payment page</p>
                     <Button fullWidth
                         onClick={() => this.props.history.push("/")}
-                        style={{ textTransform: 'none', borderRadius: '0%'}} variant="contained" color="secondary">Proceed to checkout</Button>
+                        style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">Proceed to checkout</Button>
                 </div>
             </>
-            
+
         )
     }
 
