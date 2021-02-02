@@ -4,10 +4,36 @@ import Header from '../common/Header';
 import Footer from '../common/Footer';
 import { connect } from 'react-redux';
 import buynow from '../../flux/actions/buynow'
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
+
+
+function Alert(props) {
+    return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 
 const data = require('../../server/products/index.get.json');
+const resp = require('../../server/addToCart/index.post.json');
 
 class Products extends React.Component {
+
+    state = {
+        open: false
+    }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.count !== undefined && prevProps.count !== this.props.count)
+            this.setState({ open: true }, () => {
+                setInterval(() => {
+                    this.setState({ open: false })
+                }, 3000)
+            })
+    }
+
+    handleClose = () => {
+        this.setState({ open: false })
+    }
+
     processMenuList = () => {
         const listStyle = {
             marginLeft: '5%'
@@ -15,7 +41,7 @@ class Products extends React.Component {
         const hrStyle = {
             height: '2px',
             width: '100%',
-            color: 'blue',
+            color: '#e7e7ec',
             float: 'left',
             marginLeft: '2%'
 
@@ -69,12 +95,12 @@ class Products extends React.Component {
 
     processProductCard = (value) => {
         return (
-            <Card key={value.id} style={{ height: '100%', boxShadow: 'none', borderBottom: 'dashed #e7e7ec', overflow: 'hidden' }}>
+            <Card key={value.id} style={{ height: '100%', boxShadow: 'none', borderBottom: 'dashed #e7e7ec' }}>
                 <div style={{
                     padding: '2%',
                     fontWeight: 'bold',
                     fontSize: '1.2rem',
-                    height: '10vh',
+                    height: '12vh',
                 }}>
                     {value.name}
                 </div>
@@ -88,7 +114,8 @@ class Products extends React.Component {
                     fontSize: '.9rem',
                     overflow: 'hidden',
                     height: '10vh',
-                    lineHeight: '1.7'
+                    lineHeight: '1.8',
+                    padding: '1vh'
                 }}>
                     {value.description}
                 </div >
@@ -120,18 +147,40 @@ class Products extends React.Component {
     }
     render() {
         return (
-            <Grid container>
-                <Grid item xs={12}>
-                    <Header />
+            <>
+                <Grid container>
+                    <Grid item xs={12}>
+                        <Header />
+                    </Grid>
+                    <Grid item xs={12}>
+                        {this.processItemGrid()}
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Footer />
+                    </Grid>
                 </Grid>
-                <Grid item xs={12}>
-                    {this.processItemGrid()}
-                </Grid>
-                <Grid item xs={12}>
-                    <Footer />
-                </Grid>
-            </Grid>
-        )
+                {
+                    this.state.open &&
+                    <Snackbar
+                        anchorOrigin={{
+                            vertical: 'top',
+                            horizontal: 'right',
+                        }
+                        }
+                        open={this.state.open}
+                    >
+                        <Alert onClose={this.handleClose} severity="success">
+                            {resp.responseMessage}
+                        </Alert>
+                    </Snackbar>
+                }
+            </>)
+    }
+}
+
+const mapStateToProps = state => {
+    return {
+        count: state.productdetail.count
     }
 }
 
@@ -141,4 +190,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(Products);
+export default connect(mapStateToProps, mapDispatchToProps)(Products);
