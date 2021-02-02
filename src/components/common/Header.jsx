@@ -62,33 +62,48 @@ class Header extends React.Component {
 
 
     processModal = () => {
-        return (<Modal
-            open={this.state.open}
-            onClose={this.handleClose}
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
-        >
-            {
-                <div style={
-                    {
-                        width: '30%',
-                        height: '80%',
-                        backgroundColor: 'white',
-                        outline: 0,
-                        margin: 'auto',
-                        marginTop: '6%',
-                        marginLeft: '52.8%'
-                    }
-                }>
-                    {this.processModalView()}
-                </div>
-            }
-        </Modal>
+        return (
+            <Modal
+                open={this.state.open}
+                onClose={this.handleClose}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+            >
+                {
+                    <div style={
+                        {
+                            width: '30%',
+                            height: '80%',
+                            backgroundColor: 'white',
+                            outline: 0,
+                            margin: 'auto',
+                            marginTop: '6%',
+                            marginLeft: '52.8%'
+                        }
+                    }>
+                        {
+                            this.props.productdetail.count ?
+                                this.processCartView()
+                                :
+                                this.processEmptyCart()
+                        }
+                    </div>
+                }
+            </Modal>
 
         );
     }
 
-    processModalView = () => {
+    processCartView = () => {
+        console.log(this.props.productdetail)
+        return (
+            <div>
+
+            </div>
+        )
+    }
+
+    processEmptyCart = () => {
         return (
             <>
                 <div style={{ height: '39%' }}>
@@ -138,4 +153,5 @@ const mapStateToProps = (state) => {
         productdetail: state.productdetail
     }
 }
+
 export default withRouter(connect(mapStateToProps)(Header));

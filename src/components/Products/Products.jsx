@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import { connect } from 'react-redux';
+import buynow from '../../flux/actions/buynow'
 const data = require('./products.json');
 
 class Products extends React.Component {
@@ -64,7 +65,7 @@ class Products extends React.Component {
                     title={value.title}
                 />
                 <img width="100%" src={value.image} alt={value.description} />
-                <CardContent style={{ backgroundColor: '#e7e7ec' }}>
+                <CardContent style={{ backgroundColor: '#e7e7ec',height:'100%' }}>
                     <Typography
                         variant="body2" color="textSecondary" component="p">
                         {value.description}
@@ -74,7 +75,7 @@ class Products extends React.Component {
                     <Typography variant="subtitle2">
                         {`MRP Rs.${value.price}`}
                     </Typography>
-                    <Button onClick={() => this.props.dispatch({ type: 'BUY_NOW', payload: { ...value, count: 1 } })} style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">
+                    <Button onClick={() => this.props.buynow(value)} style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">
                         Buy Now
                 </Button>
                 </CardActions>
@@ -112,9 +113,10 @@ class Products extends React.Component {
         )
     }
 }
+
 const mapDispatchToProps = dispatch => {
     return {
-        dispatch
+        buynow: (value) => dispatch(buynow(value)),
     }
 }
 

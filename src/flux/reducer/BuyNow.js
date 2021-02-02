@@ -23,8 +23,6 @@ const buynow = (state = initialState, action) => {
             data.forEach(val => {
                 val.totalPrice = parseInt(val.price) * val.count
             })
-
-            console.log(data)
             return {
                 ...state,
                 count: state.count + 1,
