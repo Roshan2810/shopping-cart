@@ -1,0 +1,4 @@
+[2021-02-01 00:39:19.611] [renderer3] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/roshan/Desktop/shopping-cart-practice/User'
+[2021-02-01 00:39:19.611] [renderer3] [error] Error: [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/roshan/Desktop/shopping-cart-practice/logs/20210131T123809'
+[2021-02-01 00:39:19.611] [renderer3] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/roshan/Desktop/shopping-cart-practice/logs/20210131T123809'
+[2021-02-01 00:40:33.088] [renderer3] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/roshan/Desktop/anuvaad/.vscode'

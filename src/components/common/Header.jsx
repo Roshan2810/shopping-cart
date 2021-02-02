@@ -111,7 +111,7 @@ class Header extends React.Component {
                 </div>
                 <div style={{ padding: '1%', height: '10%' }}>
                     <Button fullWidth
-                        onClick={()=>this.props.history.push("/")}
+                        onClick={() => this.props.history.push("/")}
                         style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">Start Shopping</Button>
                 </div>
             </>
@@ -119,7 +119,6 @@ class Header extends React.Component {
     }
 
     render() {
-        console.log(this.props.productdetail)
         return (
             <AppBar position="static">
                 <Toolbar style={{ backgroundColor: 'white' }}>

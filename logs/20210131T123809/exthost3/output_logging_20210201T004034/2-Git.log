@@ -1,0 +1,21 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/roshan/Desktop/anuvaad
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :anuvaad-fe/anuvaad-webapp/src/flux/store/store.js
+> git ls-files --stage -- /home/roshan/Desktop/anuvaad/anuvaad-fe/anuvaad-webapp/src/flux/store/store.js
+> git cat-file -s 237b8710cb75c400f7f2f5454bcca57fc4282803
