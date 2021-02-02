@@ -97,9 +97,34 @@ class Header extends React.Component {
     processCartView = () => {
         console.log(this.props.productdetail)
         return (
-            <div>
-
-            </div>
+           
+               <>
+                <div style={{ height: '39%' }}>
+                    <Grid container style={{ backgroundColor: 'black', color: 'white' }}>
+                        <Grid item xs={10}>
+                            <Typography style={{ padding: '2%' }} variant="h6"><strong>My Cart ({this.props.productdetail.count} items)</strong></Typography>
+                        </Grid>
+                        <Grid item xs={2}>
+                            <IconButton onClick={this.handleClose} style={{ color: 'white', float: 'right' }}>
+                                <CloseIcon fontSize="inherit" style={{ color: 'white' }} />
+                            </IconButton>
+                        </Grid>
+                    </Grid>
+                </div>
+                <div style={{ textAlign: 'center', height: '36%' }}>
+                    <p>
+                        {this.props.productdetail.count}
+                        {this.props.productdetail.details}
+                    </p>
+                </div>
+                <div style={{ padding: '1%'}}>
+                    <p style={{ textAlign: 'center'}}>Promo code can be applied on payment page</p>
+                    <Button fullWidth
+                        onClick={() => this.props.history.push("/")}
+                        style={{ textTransform: 'none', borderRadius: '0%'}} variant="contained" color="secondary">Proceed to checkout</Button>
+                </div>
+            </>
+            
         )
     }
 

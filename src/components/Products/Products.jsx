@@ -1,10 +1,10 @@
-import { Container, Grid, Card, CardContent, CardActions, Typography, Button, CardHeader } from '@material-ui/core';
+import { Container, Grid, Card, CardContent, CardActions, Typography, Button, CardHeader,  CardMedia } from '@material-ui/core';
 import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import { connect } from 'react-redux';
 import buynow from '../../flux/actions/buynow'
-const data = require('./products.json');
+const data = require('../../server/products/index.get.json');
 
 class Products extends React.Component {
     processMenuList = () => {
@@ -62,9 +62,13 @@ class Products extends React.Component {
         return (
             <Card key={value.id} style={{ borderBottom: "dashed #e7e7ec", boxShadow: 'none', borderRadius: '0%', height: "100%", display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
                 <CardHeader
-                    title={value.title}
+                    title={value.name}
                 />
-                <img width="100%" src={value.image} alt={value.description} />
+                <CardMedia
+                 image={value.imageURL}
+                 title={value.name}
+                 />
+                {/* <img width="100%" src={value.imageURL} alt={value.description} /> */}
                 <CardContent style={{ backgroundColor: '#e7e7ec',height:'100%' }}>
                     <Typography
                         variant="body2" color="textSecondary" component="p">
