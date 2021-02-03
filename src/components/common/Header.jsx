@@ -5,8 +5,10 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import IconButton from '@material-ui/core/IconButton';
 import { withRouter } from 'react-router-dom';
 import CloseIcon from '@material-ui/icons/Close';
-import { connect } from 'react-redux'
-import ControlPointIcon from '@material-ui/icons/ControlPoint';
+import { connect } from 'react-redux';
+import { bindActionCreators } from "redux";
+import addItem from '../../flux/actions/addItem';
+import removeItem from '../../flux/actions/removeItem';
 
 class Header extends React.Component {
     state = {
@@ -96,109 +98,122 @@ class Header extends React.Component {
         );
     }
 
-    processCartView = () => {
+    renderCartViewHeader = () => {
         console.log(this.props.productdetail)
-        let totalAmt = 0
-        this.props.productdetail.details.forEach(data => totalAmt = totalAmt + data.totalPrice)
-        return (
-            <div style={{ backgroundColor: '#e7e7ec', height: '100%' }}>
-                <div style={{ height: '7%' }}>
-                    <Grid container style={{ backgroundColor: 'black', color: 'white', height: '100%' }}>
-                        <Grid item xs={10}>
-                            <Typography style={{ padding: '3%' }} variant="h6"><strong>{`My Cart(${this.props.productdetail.count} items)`}</strong></Typography>
+        return <div style={{ height: '7%' }}>
+            <Grid container style={{ backgroundColor: 'black', color: 'white', height: '100%' }}>
+                <Grid item xs={10}>
+                    <Typography style={{ padding: '3%' }} variant="h6"><strong>{`My Cart(${this.props.productdetail.count} items)`}</strong></Typography>
+                </Grid>
+                <Grid item xs={2}>
+                    <IconButton onClick={this.handleClose} style={{ color: 'white', float: 'right' }}>
+                        <CloseIcon fontSize="inherit" style={{ color: 'white' }} />
+                    </IconButton>
+                </Grid>
+            </Grid>
+        </div>
+    }
+    renderItemDetails = () => {
+        return this.props.productdetail.details.map(data => {
+            return (
+                <Paper key={data.id} style={{ margin: '2% 0%', boxShadow: 'none' }}>
+                    <Grid container spacing={1}>
+                        <Grid item xs={3} style={{ padding: '2%' }}>
+                            <img style={{ width: '60%' }} src={data.imageURL} alt={data.name} />
                         </Grid>
-                        <Grid item xs={2}>
-                            <IconButton onClick={this.handleClose} style={{ color: 'white', float: 'right' }}>
-                                <CloseIcon fontSize="inherit" style={{ color: 'white' }} />
-                            </IconButton>
+                        <Grid item xs={9}>
+                            <Typography><strong>{data.name}</strong></Typography>
+                            <Grid container style={{ margin: '1%' }}>
+                                <Grid item xs={"auto"}>
+                                    <button style={{
+                                        borderRadius: '50%',
+                                        border: 'none',
+                                        backgroundColor: '#f50057',
+                                        color: 'white',
+                                        display: 'block',
+                                        height: '100%',
+                                        width: '110%',
+                                        outline: 'none'
+                                    }}
+                                        onClick={() => this.props.removeItem(data)}>
+                                        -
+                                             </button>
+                                </Grid>
+                                <Grid item xs={1} style={{ textAlign: 'center' }}>
+                                    {data.count}
+                                </Grid>
+                                <Grid item xs={1}>
+                                    <button style={{
+                                        borderRadius: '50%',
+                                        border: 'none',
+                                        backgroundColor: '#f50057',
+                                        color: 'white',
+                                        display: 'block',
+                                        height: '100%',
+                                        width: '60%',
+                                        outline: 'none'
+                                    }}
+                                        onClick={() => this.props.addItem(data)}>
+                                        +
+                                            </button>
+                                </Grid>
+                                <Grid item xs={1}>
+                                    X
+                                </Grid>
+                                <Grid item xs={6}>
+                                    {`Rs.${data.price}`}
+                                </Grid>
+                                <Grid item xs={2}>
+                                    {`Rs.${data.totalPrice}`}
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Grid>
-                </div>
-                <div style={{ height: '78%', overflow: 'hidden', overflowY: 'auto' }}>
-                    {
-                        this.props.productdetail.details.map(data => {
-                            return (
-                                <Paper style={{ margin: '2% 0%', boxShadow: 'none' }}>
-                                    <Grid container spacing={1}>
-                                        <Grid item xs={3} style={{ padding: '2%' }}>
-                                            <img style={{ width: '60%' }} src={data.imageURL} />
-                                        </Grid>
-                                        <Grid item xs={9}>
-                                            <Typography><strong>{data.name}</strong></Typography>
-                                            <Grid container style={{ margin: '1%' }}>
-                                                <Grid item xs={0.5}>
-                                                    <button style={{
-                                                        borderRadius: '50%',
-                                                        border: 'none',
-                                                        backgroundColor: '#f50057',
-                                                        color: 'white',
-                                                        display: 'block',
-                                                        height: '100%',
-                                                        width: '100%'
-                                                    }}>
-                                                        -
-                                                             </button>
-                                                </Grid>
-                                                <Grid item xs={1} style={{ textAlign: 'center' }}>
-                                                    {data.count}
-                                                </Grid>
-                                                <Grid item xs={1}>
-                                                    <button style={{
-                                                        borderRadius: '50%',
-                                                        border: 'none',
-                                                        backgroundColor: '#f50057',
-                                                        color: 'white',
-                                                        display: 'block',
-                                                        height: '100%',
-                                                        width: '60%',
-                                                    }}>
-                                                        +
-                                                            </button>
-                                                </Grid>
-                                                <Grid item xs={1}>
-                                                    X
-                                                </Grid>
-                                                <Grid item xs={6}>
-                                                    {`Rs.${data.price}`}
-                                                </Grid>
-                                                <Grid item xs={2}>
-                                                    {`Rs.${data.totalPrice}`}
-                                                </Grid>
-                                            </Grid>
-                                        </Grid>
-                                    </Grid>
-                                </Paper>
-                            );
-                        })
-                    }
-
-                    <Paper style={{ margin: '2%', padding: '1%', boxSizing: 'border-box' }}>
-                        <Grid container style={{ height: '100%' }}>
-                            <Grid item xs={3}>
-                                <img src="/static/images/lowest-price.png" />
-                            </Grid>
-                            <Grid item xs={9}>
-                                <span style={{ marginLeft: '3vw', marginTop: '2vh' }}>You won't find it cheaper anywhere</span>
-                            </Grid>
-                        </Grid>
-                    </Paper>
-                </div>
-                <Paper style={{ height: '15%', padding: '1%' }}>
-                    <div style={{ height: '20%', margin: '2%', fontWeight: 'bolder' }}>
-                        <p style={{ textAlign: 'center' }}>Promo code can be applied on payment page</p>
-                        <Button fullWidth
-                            onClick={() => this.props.history.push("/")}
-                            style={{ textTransform: 'none', fontWeight: 'bolder', padding: '3%', fontSize: '1.2rem', height: '5vh' }} variant="contained" color="secondary">
-                            Proceed to checkout
-                        <span style={{ color: 'white', marginLeft: 'auto', fontWeight: 'bolder' }}>
-                                {`Rs. ${totalAmt}`}
-                            </span>
-                            <span style={{ color: 'white', fontSize: '1.5rem', marginLeft: '2%', marginTop: "-0.5%", fontWeight: '1000' }}>
-                                {`>`}
-                            </span>
-                        </Button>
-                    </div>
                 </Paper>
+            );
+        })
+    }
+
+    renderPromotionalTag = () => {
+        return <Paper style={{ margin: '2%', padding: '1%', boxSizing: 'border-box' }}>
+            <Grid container style={{ height: '100%' }}>
+                <Grid item xs={3}>
+                    <img src="/static/images/lowest-price.png" alt="lowest price" />
+                </Grid>
+                <Grid item xs={9}>
+                    <span style={{ marginLeft: '3vw', marginTop: '2vh' }}>You won't find it cheaper anywhere</span>
+                </Grid>
+            </Grid>
+        </Paper>
+    }
+
+    renderProceedToCheckout = () => {
+        return <Paper style={{ height: '15%', padding: '1%' }}>
+            <div style={{ height: '20%', margin: '2%', fontWeight: 'bolder' }}>
+                <p style={{ textAlign: 'center' }}>Promo code can be applied on payment page</p>
+                <Button fullWidth
+                    onClick={() => this.props.history.push("/")}
+                    style={{ textTransform: 'none', fontWeight: 'bolder', padding: '3%', fontSize: '1.2rem', height: '5vh' }} variant="contained" color="secondary">
+                    Proceed to checkout
+                        <span style={{ color: 'white', marginLeft: 'auto', fontWeight: 'bolder' }}>
+                        {`Rs. ${this.props.productdetail.totalAmt}`}
+                    </span>
+                    <span style={{ color: 'white', fontSize: '1.5rem', marginLeft: '2%', marginTop: "-0.5%", fontWeight: '1000' }}>
+                        {`>`}
+                    </span>
+                </Button>
+            </div>
+        </Paper>
+    }
+    processCartView = () => {
+        return (
+            <div style={{ backgroundColor: '#e7e7ec', height: '100%' }}>
+                {this.renderCartViewHeader()}
+                <div style={{ height: '78%', overflow: 'hidden', overflowY: 'auto' }}>
+                    {this.renderItemDetails()}
+                    {this.renderPromotionalTag()}
+                </div>
+                {this.renderProceedToCheckout()}
             </div>
 
         )
@@ -249,10 +264,20 @@ class Header extends React.Component {
     }
 }
 
+
+
 const mapStateToProps = (state) => {
     return {
-        productdetail: state.productdetail
+        productdetail: state.productdetail,
     }
 }
 
-export default withRouter(connect(mapStateToProps)(Header));
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+        addItem,
+        removeItem
+    },
+        dispatch)
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

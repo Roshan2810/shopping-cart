@@ -1,4 +1,4 @@
-import { Container, Grid, Card, CardContent, CardActions, Typography, Button, CardHeader, CardMedia } from '@material-ui/core';
+import { Container, Grid, Card, CardActions, Typography, Button, CardMedia } from '@material-ui/core';
 import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';

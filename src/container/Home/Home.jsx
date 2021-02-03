@@ -3,18 +3,19 @@ import Header from '../../components/common/Header'
 import Carousel from './Carousel'
 import Footer from '../../components/common/Footer'
 
-const data = require('./carddata.json')
+const data = require('../../server/categories/index.get.json')
+
 class Home extends React.Component {
     processCards = () => {
         const length = data.length - 1
         return data.map((val, index) => {
             return <Carousel
-                key={val.cardContentH5}
-                cardContentH5={val.cardContentH5}
-                cardContentSubtitle={val.cardContentSubtitle}
-                image={val.image}
-                mediaPosition={val.mediaPosition}
-                buttonText={val.buttonText}
+                key={val.id}
+                cardContentH5={val.name}
+                cardContentSubtitle={val.description}
+                image={val.imageUrl}
+                mediaPosition={val.order}
+                buttonText={val.name}
                 lastCard={length === index ? true : false} />
         })
     }

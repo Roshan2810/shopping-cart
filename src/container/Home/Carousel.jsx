@@ -10,7 +10,7 @@ const processLeftMedia = (cardContentH5, cardContentSubtitle, image, buttonText)
     return (
         <>
             <CardMedia style={{ marginRight: '5%' }}>
-                <img style={{ width: '70%' }} src={image} alt={buttonText} />
+                <img style={{ width: '60%',backgroundSize:'contain' }} src={image} alt={buttonText} />
             </CardMedia>
             <CardContent style={{ marginTop: '5%', paddingLeft: '2%' }}>
                 <Typography component="h5" variant="h5">
@@ -56,7 +56,7 @@ const Carousel = ({ cardContentH5, cardContentSubtitle, image, mediaPosition, bu
                 display: 'flex', marginBottom: '1%',
                 boxShadow: 'none'
             }}>
-                {mediaPosition === "left"
+                {mediaPosition % 2 !== 0
                     ? processLeftMedia(cardContentH5, cardContentSubtitle, image, buttonText)
                     : processRightMedia(cardContentH5, cardContentSubtitle, image, buttonText)
                 }
