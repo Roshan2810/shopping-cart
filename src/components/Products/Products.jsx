@@ -14,11 +14,14 @@ function Alert(props) {
 
 const data = require('../../server/products/index.get.json');
 const resp = require('../../server/addToCart/index.post.json');
+const categories = require('../../server/categories/index.get.json')
 
 class Products extends React.Component {
 
     state = {
-        open: false
+        open: false,
+        categoryData:data,
+        isClicked:false
     }
 
     componentDidUpdate(prevProps) {
@@ -34,9 +37,13 @@ class Products extends React.Component {
         this.setState({ open: false })
     }
 
-    processMenuList = () => {
-        const listStyle = {
-            marginLeft: '5%'
+    handleMenuClick = (categoryId)=>{
+        const categorizedData = data.filter(value=> value.category === categoryId)
+        this.setState({categoryData : categorizedData,isClicked:!this.state.isClicked})
+    }
+    processMenu =(name,id)=>{
+        const btnStyle = {
+            marginLeft: '5%',
         }
         const hrStyle = {
             height: '2px',
@@ -46,34 +53,28 @@ class Products extends React.Component {
             marginLeft: '2%'
 
         }
+        return <>
+         <Button key={id} style={btnStyle} onClick={()=>this.handleMenuClick(id)}>
+                   {name}
+                </Button>
+                <hr style={hrStyle}></hr>
+        </>
+    }
+    processMenuList = () => {
         return <div style={{
             width: '100%',
             height: '100%',
             backgroundColor: '#e7e7ec',
             top: '0'
         }}>
-            <ul style={{ listStyle: 'none', padding: "2vh 0vh", margin: '0%', overflow: 'hidden', color: 'gray' }}>
-                <li style={listStyle}>
-                    Fruits & Vegetables
-                </li>
-                <hr style={hrStyle}></hr>
-                <li style={listStyle}>
-                    Bakery Cakes and Dairy
-            </li>
-                <hr style={hrStyle}></hr>
-                <li style={listStyle}>
-                    Beverages
-                </li>
-                <hr style={hrStyle}></hr>
-                <li style={listStyle}>
-                    Beauty and Hygiene
-                </li>
-                <hr style={hrStyle}></hr>
-                <li style={listStyle}>
-                    Baby Care
-                </li>
-                <hr style={hrStyle}></hr>
-            </ul>
+
+    {
+    categories.map(category=>{
+        return (
+            this.processMenu(category.name,category.id)
+        )
+    })
+    }            
         </div>
     }
     processItemGrid = () => {
@@ -85,7 +86,7 @@ class Products extends React.Component {
                     </Grid>
                     <Grid style={{ height: "100%" }} item xs={9}>
                         <div style={{ marginTop: '1%', height: '100%' }}>
-                            {this.processProductLists()}
+                            {this.processProductLists(this.state.categoryData)}
                         </div>
                     </Grid>
                 </Grid>
@@ -132,7 +133,7 @@ class Products extends React.Component {
         );
     }
 
-    processProductLists = () => {
+    processProductLists = (data) => {
         return (
             <Grid container spacing={1}>
                 <Grid container item xs={12} spacing={3} >

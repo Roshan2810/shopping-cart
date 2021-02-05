@@ -1,3 +1,4 @@
+import { CompareArrowsOutlined } from '@material-ui/icons';
 import C from '../../config/constant';
 
 const initialState = {
@@ -52,18 +53,17 @@ const buynow = (state = initialState, action) => {
                 totalAmt
             }
         case C.REMOVE_ITEM:
-            if (count !== 1) {
+            if (count >1) {
                 data.forEach((item, i) => {
-                    if (data[i].id && data[i].id === action.payload.id) {
+                    if (item.id === action.payload.id) {
                         if (item.count > 1) {
-                            data[i].count = data[i].count - 1
-                            data[i].totalPrice = data[i].count * data[i].price
-                        } else {
-                            index = i
+                            item.count = item.count - 1
+                            item.totalPrice = item.count * item.price
+                        } else if(item.count===1){
+                        data.splice(i,1);
                         }
                     }
                 })
-                delete data[index]
                 data.forEach(item => {
                     totalAmt = totalAmt + item.totalPrice
                 })
