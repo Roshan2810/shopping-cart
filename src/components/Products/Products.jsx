@@ -21,7 +21,8 @@ class Products extends React.Component {
     state = {
         open: false,
         categoryData:data,
-        isClicked:false
+        status:false,
+        id:""
     }
 
     componentDidUpdate(prevProps) {
@@ -38,12 +39,16 @@ class Products extends React.Component {
     }
 
     handleMenuClick = (categoryId)=>{
+        if(this.state.id !== categoryId){
         const categorizedData = data.filter(value=> value.category === categoryId)
-        this.setState({categoryData : categorizedData,isClicked:!this.state.isClicked})
+        this.setState({categoryData : categorizedData,id:categoryId})
+        }else{
+            this.setState({categoryData : data,id:""})
+        }
     }
     processMenu =(name,id)=>{
         const btnStyle = {
-            marginLeft: '5%',
+                marginLeft: '5%',
         }
         const hrStyle = {
             height: '2px',
@@ -53,12 +58,16 @@ class Products extends React.Component {
             marginLeft: '2%'
 
         }
-        return <>
-         <Button key={id} style={btnStyle} onClick={()=>this.handleMenuClick(id)}>
+        return (
+        <>
+        
+        <div>
+                <Button key={id} style={btnStyle} onClick={()=>this.handleMenuClick(id)}>
                    {name}
                 </Button>
-                <hr style={hrStyle}></hr>
-        </>
+                </div>
+           
+        </>);
     }
     processMenuList = () => {
         return <div style={{
@@ -71,7 +80,7 @@ class Products extends React.Component {
     {
     categories.map(category=>{
         return (
-            this.processMenu(category.name,category.id)
+            <div style={{backgroundColor:category.id === this.state.id ? 'orange':""}}>{this.processMenu(category.name,category.id)}</div>
         )
     })
     }            
