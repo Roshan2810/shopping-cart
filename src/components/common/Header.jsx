@@ -77,7 +77,7 @@ class Header extends React.Component {
                     <div style={
                         {
                             width: '30%',
-                            height: '80%',
+                            height: '85%',
                             backgroundColor: 'white',
                             outline: 0,
                             margin: 'auto',
@@ -103,10 +103,10 @@ class Header extends React.Component {
         return <div style={{ height: '7%' }}>
             <Grid container style={{ backgroundColor: 'black', color: 'white', height: '100%' }}>
                 <Grid item xs={10}>
-                    <Typography style={{ padding: '3%' }} variant="h6"><strong>{`My Cart(${this.props.productdetail.count} items)`}</strong></Typography>
+                    <Typography style={{ padding: '1%' }} variant="subtitle1"><strong>{`My Cart (${this.props.productdetail.count} items)`}</strong></Typography>
                 </Grid>
                 <Grid item xs={2}>
-                    <IconButton onClick={this.handleClose} style={{ color: 'white', float: 'right' }}>
+                    <IconButton onClick={this.handleClose} style={{ marginTop: '-11%', color: 'white', float: 'right' }}>
                         <CloseIcon fontSize="inherit" style={{ color: 'white' }} />
                     </IconButton>
                 </Grid>
@@ -119,10 +119,10 @@ class Header extends React.Component {
                 <Paper key={data.id} style={{ margin: '2% 0%', boxShadow: 'none' }}>
                     <Grid container spacing={1}>
                         <Grid item xs={3} style={{ padding: '2%' }}>
-                            <img style={{ width: '60%' }} src={data.imageURL} alt={data.name} />
+                            <img style={{ width: '80%' }} src={data.imageURL} alt={data.name} />
                         </Grid>
                         <Grid item xs={9}>
-                            <Typography><strong>{data.name}</strong></Typography>
+                            <Typography variant="subtitle2"><strong>{data.name}</strong></Typography>
                             <Grid container style={{ margin: '1%' }}>
                                 <Grid item xs={"auto"}>
                                     <button style={{
@@ -132,7 +132,7 @@ class Header extends React.Component {
                                         color: 'white',
                                         display: 'block',
                                         height: '100%',
-                                        width: '110%',
+                                        width: '120%',
                                         outline: 'none'
                                     }}
                                         onClick={() => this.props.removeItem(data)}>
@@ -150,7 +150,7 @@ class Header extends React.Component {
                                         color: 'white',
                                         display: 'block',
                                         height: '100%',
-                                        width: '60%',
+                                        width: '80%',
                                         outline: 'none'
                                     }}
                                         onClick={() => this.props.addItem(data)}>
@@ -176,40 +176,41 @@ class Header extends React.Component {
 
     renderPromotionalTag = () => {
         return <Paper style={{ margin: '2%', padding: '1%', boxSizing: 'border-box' }}>
-            <Grid container style={{ height: '100%' }}>
+            <Grid container style={{ height: '100%' }} spacing={1}>
                 <Grid item xs={3}>
-                    <img src="/static/images/lowest-price.png" alt="lowest price" />
+                    <img src="/static/images/lowest-price.png" alt="lowest price" style={{ width: '100%' }} />
                 </Grid>
                 <Grid item xs={9}>
-                    <span style={{ marginLeft: '3vw', marginTop: '2vh' }}>You won't find it cheaper anywhere</span>
+                    <span style={{ marginTop: '2vh' }}>You won't find it cheaper anywhere</span>
                 </Grid>
             </Grid>
         </Paper>
     }
 
     renderProceedToCheckout = () => {
-        return <Paper style={{ height: '15%', padding: '1%' }}>
-            <div style={{ height: '20%', margin: '2%', fontWeight: 'bolder' }}>
-                <p style={{ textAlign: 'center' }}>Promo code can be applied on payment page</p>
-                <Button fullWidth
-                    onClick={() => this.props.history.push("/")}
-                    style={{ textTransform: 'none', fontWeight: 'bolder', padding: '3%', fontSize: '1.2rem', height: '5vh' }} variant="contained" color="secondary">
-                    Proceed to checkout
+        return <>.
+        <Paper style={{padding: '4%' }}>
+            <div style={{ marginBottom:'1.5%',textAlign: 'center' }}>Promo code can be applied on payment page</div>
+            <Button fullWidth
+                onClick={this.handleClose}
+                style={{ textTransform: 'none', fontWeight: 'bolder' }} variant="contained" color="secondary">
+                Proceed to checkout
                         <span style={{ color: 'white', marginLeft: 'auto', fontWeight: 'bolder' }}>
-                        {`Rs. ${this.props.productdetail.totalAmt}`}
-                    </span>
-                    <span style={{ color: 'white', fontSize: '1.5rem', marginLeft: '2%', marginTop: "-0.5%", fontWeight: '1000' }}>
-                        {`>`}
-                    </span>
-                </Button>
-            </div>
-        </Paper>
+                    {`Rs. ${this.props.productdetail.totalAmt}`}
+                </span>
+                <span style={{ color: 'white', marginLeft: '2%', marginTop: "-0.5%", fontWeight: '1000' }}>
+                    {`>`}
+                </span>
+            </Button>
+            </Paper>
+         </>
+         
     }
     processCartView = () => {
         return (
             <div style={{ backgroundColor: '#e7e7ec', height: '100%' }}>
                 {this.renderCartViewHeader()}
-                <div style={{ height: '78%', overflow: 'hidden', overflowY: 'auto' }}>
+                <div style={{height:'72%', overflow: 'hidden', overflowY: 'auto' }}>
                     {this.renderItemDetails()}
                     {this.renderPromotionalTag()}
                 </div>
@@ -234,7 +235,7 @@ class Header extends React.Component {
                         </Grid>
                     </Grid>
                 </div>
-                <div style={{ textAlign: 'center', height: '55%' }}>
+                <div style={{ textAlign: 'center', height: '50%' }}>
                     <Typography variant="h6"><strong>No items in your cart</strong></Typography>
                     <div>
                         Your favourite items are just a click away
@@ -242,7 +243,7 @@ class Header extends React.Component {
                 </div>
                 <div style={{ padding: '1%', height: '10%' }}>
                     <Button fullWidth
-                        onClick={() => this.props.history.push("/")}
+                        onClick={this.handleClose}
                         style={{ textTransform: 'none', borderRadius: '0%' }} variant="contained" color="secondary">Start Shopping</Button>
                 </div>
             </>

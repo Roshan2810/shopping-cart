@@ -109,7 +109,7 @@ class Products extends React.Component {
                 <div style={{
                     padding: '2%',
                     fontWeight: 'bold',
-                    fontSize: '1.2rem',
+                    fontSize: '1rem',
                     height: '12vh',
                 }}>
                     {value.name}
@@ -123,7 +123,7 @@ class Products extends React.Component {
                     backgroundColor: '#e7e7ec',
                     fontSize: '.9rem',
                     overflow: 'hidden',
-                    height: '10vh',
+                    height: '12vh',
                     lineHeight: '1.8',
                     padding: '1vh'
                 }}>
